@@ -1,0 +1,88 @@
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:focus {
+  background-color: rgba(0, 242, 255, 0.246);
+  font-style: bold;
+
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: linear-gradient(to bottom right, rgb(242, 0, 255), rgb(0, 204, 255));
+}
+
+input {
+  position: relative;
+  background-color: rgb(208, 151, 255);
+  font-family: monospace;
+  font-size: 20px;
+  height: 40px;
+  width: 300px;
+  border-bottom: solid rgb(34, 100, 96) 2px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  color: rgb(54, 54, 54);
+  padding: 0 0 0 10px;
+  margin: 0 0 0 0;
+  z-index: 2;
+};
+
+.search-container {
+  position: fixed;
+}
+.search-container input,
+.search-container .suggestions {
+}
+
+.search-container input {
+}
+.search-container .suggestions {
+}
+
+
+ul {
+  position: absolute;
+  font-family: monospace;
+  font-size: 20px;
+  color: rgb(54, 54, 54);
+  border: none;
+  padding: 0 0 0 10px;
+  margin: 0 0 0 0;
+  width: 300px;
+  background-color: rgba(0, 242, 255, 0.397);
+  box-shadow: 0 0 15px rgb(77, 76, 76);
+  z-index: 1;
+};
+
+ul.has-suggestions {
+
+}
+
+ul li {
+
+  list-style-type: none;
+  border: none;
+  height: 30px;
+  margin: 10px 0 0 0;
+  padding: 0 0 0 0;
+}
+
+ul li:hover {
+  background-color: rgba(0, 230, 255, 0.397);
+  list-style-type: none;
+  border: none;
+  height: 40px;
+  margin: 0 0 0 -10px;
+  padding: 10px 0 10px 10px;
+};
